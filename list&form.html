@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list&form</title>
+</head>
+
+<body>
+    <!-- ul tag is used for unordered list -->
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+    <ul type="square">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+    <ul type="circle">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+    <!-- it is not suggested to style throough html -->
+
+    <!-- ol tag is used for ordered list -->
+    <ol type="I">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ol>
+    <!-- table tags -->
+    <div>
+        <table>
+
+            <caption>whos is the pro player</caption>
+            <thead>
+                <!-- colspan attribiute  yaad rakhna for th tag  -->
+                <tr>
+                    <th>S.No</th>
+                    <th>Player Name</th>
+                    <th>No. of Kills</th>
+                    <th>Game</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Shubh</td>
+                    <td>50</td>
+                    <td>Free Fire</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rahul</td>
+                    <td>00</td>
+                    <td>Free Fire</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Adam</td>
+                    <td>1</td>
+                    <td>Free Fire</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Salman</td>
+                    <td>8 </td>
+                    <td>Free Fire</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h1>Registration form for admission in DU </h1>
+        <form action="form.php">
+            <!-- input tag -->
+            <input type="text" placeholder="Enter your name">
+            <br>
+            <label for="cateogaryida">
+                <input type="radio" value="Unreserved" name="cateogary" id="cateogaryida">Unreserved
+            </label>
+            <label for="cateogaryidb">
+                <input type="radio" value="EWS" name="cateogary" id="cateogaryidb">EWS
+            </label>
+            <label for="cateogaryidc">
+                <input type="radio" value="OBC NCL" name="cateogary" id="cateogaryidc" class="red blue">OBC NCL
+            </label>
+            <br>
+            <label for="singlechild">
+                <input type="checkbox" name="Are you a single child" id="singlechild" class="red">Are you a single child
+            </label>
+            <br>
+            <!-- textarea tag -->
+            <textarea name="address" id="address" cols="30" rows="3" placeholder="enter your full address"></textarea>
+            <br>
+            <!-- select tag -->
+            <select name="state" id="state">
+                <option value="none">Select your state</option>
+                <option value="uttar pradesh">uttar pradesh</option>
+                <option value="uttarakhand">uttarakhand</option>
+                <option value="delhi">delhi</option>
+                <option value="mumbai">mumbai</option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>
